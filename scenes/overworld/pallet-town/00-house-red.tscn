@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://ol5yfm4elkq3"]
+[gd_scene load_steps=11 format=4 uid="uid://ol5yfm4elkq3"]
 
 [ext_resource type="Texture2D" uid="uid://bteu1r6ns1cei" path="res://assets/graphics/enviroments/00-interior.png" id="1_w7p8e"]
 [ext_resource type="Texture2D" uid="uid://c03vwh0601k44" path="res://assets/graphics/enviroments/borders.png" id="2_qso31"]
+[ext_resource type="PackedScene" uid="uid://joo8dv2313vt" path="res://scenes/actors/red.tscn" id="3_qso31"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx22t"]
 texture = ExtResource("1_w7p8e")
@@ -1513,7 +1514,7 @@ tile_map_data = PackedByteArray("AAD/////BgAFAAQAAAD//wAABgAFAAQAAAAAAAAABgAFAAQ
 tile_set = SubResource("TileSet_gmyk3")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD6/wEAAAADABgAAAD6/wIAAAADABkAAAD6/wMAAAADABoAAAD6/wQAAAADABsAAAD6//3/AAADAA4AAAD+//v/AAAEABMAAAD+//z/AAAEABQAAAD+//3/AAAEABUAAAD9//v/AAADAA8AAAD9//z/AAADABAAAAD9//3/AAADABEAAAD///r/AAACAAIAAAD///v/AAACAAMAAAAAAPr/AAADAAIAAAAAAPv/AAADAAMAAAD8//r/AAAHAAYAAAA=")
+tile_map_data = PackedByteArray("AAD6/wEAAAADABgAAAD6/wIAAAADABkAAAD6/wMAAAADABoAAAD6/wQAAAADABsAAAD6//3/AAADAA4AAAD+//v/AAAEABMAAAD+//z/AAAEABQAAAD+//3/AAAEABUAAAD9//v/AAADAA8AAAD9//z/AAADABAAAAD9//3/AAADABEAAAD///r/AAACAAIAAAD///v/AAACAAMAAAAAAPr/AAADAAIAAAAAAPv/AAADAAMAAAD8//r/AAAHAAYAAAD///7/AAAAAA4AAAD/////AAAAAA8AAAAAAP7/AAABAA4AAAAAAP//AAABAA8AAAD//wAAAAAEABIAAAAAAAAAAAAFABIAAAA=")
 tile_set = SubResource("TileSet_g0oly")
 
 [node name="TileMapLayer4" type="TileMapLayer" parent="."]
@@ -1525,3 +1526,6 @@ tile_set = SubResource("TileSet_g0oly")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-881, 1559)
 shape = SubResource("RectangleShape2D_hi6xq")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_qso31")]
+position = Vector2(168, 127)
