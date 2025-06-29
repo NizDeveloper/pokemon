@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://doraoagfvebbr" path="res://assets/graphics/actors/characters/rojo1.png" id="1_k3axf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gr7y6"]
-size = Vector2(24, 47)
+size = Vector2(32, 18.125)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 script = ExtResource("1_gr7y6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -18,7 +18,7 @@ vframes = 4
 root_node = NodePath("../Sprite2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
+position = Vector2(0, 17.0625)
 shape = SubResource("RectangleShape2D_gr7y6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
