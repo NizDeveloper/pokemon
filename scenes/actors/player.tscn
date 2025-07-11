@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://joo8dv2313vt"]
 
-[ext_resource type="Script" uid="uid://b8wga2oflqmtl" path="res://scripts/character/red.gd" id="1_gr7y6"]
 [ext_resource type="Texture2D" uid="uid://doraoagfvebbr" path="res://assets/graphics/actors/characters/rojo1.png" id="1_k3axf"]
+[ext_resource type="Script" uid="uid://b8wga2oflqmtl" path="res://scripts/character/red.gd" id="1_ru62r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gr7y6"]
 size = Vector2(32, 18.125)
 
 [node name="player" type="CharacterBody2D"]
-script = ExtResource("1_gr7y6")
+script = ExtResource("1_ru62r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_k3axf")
